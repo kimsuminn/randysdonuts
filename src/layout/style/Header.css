@@ -20,7 +20,6 @@ header .header_inner {
 }
 header .header_inner > .depth_1 {
   height: 100%;
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,6 +32,7 @@ header .header_inner > .depth_1 > li {
   justify-content: center;
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 header .header_inner > .depth_1 > li > a {
   font-family: "Bold";
@@ -106,7 +106,7 @@ header .header_inner .ham .ham_menu {
   width: 0;
   height: 100%;
   overflow: hidden;
-  background-color: #032540;
+  background-color: #1B4569;
   position: absolute;
   top: 0;
   right: 0;
@@ -147,7 +147,8 @@ header .header_inner .ham .ham_menu .depth_1 > li.on .depth_2 {
   height: fit-content;
 }
 header .header_inner .ham .ham_menu .depth_1 > li.on .depth_2 li {
-  height: 50px;
+  height: 60px;
+  padding: 1rem 0;
   opacity: 1;
 }
 header .header_inner .ham .ham_menu .depth_1 > li .title {
@@ -169,12 +170,14 @@ header .header_inner .ham .ham_menu .depth_1 > li .depth_2 {
 }
 header .header_inner .ham .ham_menu .depth_1 > li .depth_2 li {
   height: 0;
+  padding: 0;
   overflow: hidden;
   align-content: center;
   opacity: 0;
   transition: 0.3s;
 }
 header .header_inner .ham .ham_menu .depth_1 > li .depth_2 li a {
+  font-size: 1.1rem;
   transition: 0.3s;
 }
 header .header_inner .ham .ham_menu .depth_1 > li .depth_2 li a:hover {

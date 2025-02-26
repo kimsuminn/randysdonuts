@@ -22,7 +22,6 @@ header {
 
     & > .depth_1 {
       height: 100%;
-      flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -35,6 +34,7 @@ header {
         justify-content: center;
         align-items: center;
         position: relative;
+        cursor: pointer;
 
         & > a {
           font-family: 'Bold';
@@ -129,7 +129,7 @@ header {
         width: 0;
         height: 100%;
         overflow: hidden;
-        background-color: #032540;
+        background-color: var.$primary-color;
         position: absolute;
         top: 0;
         right: 0;
@@ -174,7 +174,8 @@ header {
                 height: fit-content;
 
                 li {
-                  height: 50px;
+                  height: 60px;
+                  padding: 1rem 0;
                   opacity: 1;
                 }
               }
@@ -200,12 +201,14 @@ header {
 
               li {
                 height: 0;
+                padding: 0;
                 overflow: hidden;
                 align-content: center;
                 opacity: 0;
                 transition: .3s;
 
                 a {
+                  font-size: 1.1rem;
                   transition: .3s;
 
                   &:hover {

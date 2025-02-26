@@ -97,14 +97,13 @@ function Header() {
         <h1 className="logo">
           <Link to='/'><img src="/img/layout/logo.png" alt="logo" /></Link>
         </h1>
-        <ul className="depth_1">
+        <ul 
+          className="depth_1"                 onMouseOver={mouseOverEvent}
+          onMouseLeave={mouseLeaveEvent}
+        >
           {
             menu.map(item => (
-              <li
-                key={item.id}
-                onMouseOver={mouseOverEvent}
-                onMouseLeave={mouseLeaveEvent}
-              >
+              <li key={item.id}>
                 <Link to={item.url}>{item.title}</Link>
                 <ul className="depth_2">
                   {
