@@ -1,0 +1,22 @@
+footer {
+  width: 100%;
+  background-color: #1B4569;
+  color: #ffffff;
+}
+footer .footer_inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+footer .footer_inner p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: clamp(0.7rem, 2.5vw, 0.9rem);
+}
+
+/*# sourceMappingURL=Footer.css.map */
