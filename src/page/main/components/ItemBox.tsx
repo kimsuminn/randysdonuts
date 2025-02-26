@@ -19,7 +19,7 @@ function ItemBox({ item } :PropsType) {
             <figure>
               <img src={val.img} alt={`${val.id}`} />
             </figure>
-            <div className="text">
+            <div className="info">
               <div className="title">
                 <p>{val.subTitle}</p>
                 <h1>{val.title}</h1>
@@ -29,11 +29,11 @@ function ItemBox({ item } :PropsType) {
                   {val.description_1}<br />
                   {val.description_2}
                 </p>
+                <button 
+                  type="button"
+                  onClick={() => navigate(val.url)}
+                >VIEW MORE</button>
               </div>
-              <button 
-                type="button"
-                onClick={() => navigate(val.url)}
-              >VIEW MORE</button>
             </div>
           </div>
         ))

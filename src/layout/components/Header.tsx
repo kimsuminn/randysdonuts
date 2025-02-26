@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../../store/store";
+import { changeStateHamOpen } from "../../store/reducer/HeaderSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../style/Header.css";
 import { faAngleDown, faAngleUp, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import "../style/Header.css";
 
 interface MenuType {
   id: number,
@@ -64,8 +67,10 @@ const menu: MenuType[] = [
 
 function Header() {
 
+  const { hamOpen } = useSelector((state :RootState) => state.header);
+  const dispatch = useDispatch();
+
   const [open, setOpen] = useState<boolean>(false);
-  const [hamOpen, setHamOpen] = useState<boolean>(false);
   const [clickMenu, setClickMenu] = useState<boolean[]>([false, false, false, false, false]);
 
   const mouseOverEvent = () => {
@@ -87,7 +92,7 @@ function Header() {
   }
 
   const hamCloseClickEvent = () => {
-    setHamOpen(false);
+    dispatch(changeStateHamOpen(false));
     setClickMenu(prev => prev.map(item => false));
   }
 
@@ -133,7 +138,7 @@ function Header() {
         <div className="ham">
           <button 
             type="button" 
-            onClick={() => setHamOpen(true)}
+            onClick={() => dispatch(changeStateHamOpen(true))}
           >
             <FontAwesomeIcon icon={faBars} />
           </button>
