@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
-import "../style/Header.css";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../style/Header.css";
+import { faAngleDown, faAngleUp, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 interface MenuType {
   id: number,
@@ -9,10 +11,10 @@ interface MenuType {
   sub: { title: string, url: string }[]
 }
 
-const menu :MenuType[] = [
-  { 
-    id: 0, 
-    title: 'BRAND', 
+const menu: MenuType[] = [
+  {
+    id: 0,
+    title: 'BRAND',
     url: '/brand',
     sub: [
       { title: '브랜드 스토리', url: '/brand' },
@@ -63,12 +65,30 @@ const menu :MenuType[] = [
 function Header() {
 
   const [open, setOpen] = useState<boolean>(false);
+  const [hamOpen, setHamOpen] = useState<boolean>(false);
+  const [clickMenu, setClickMenu] = useState<boolean[]>([false, false, false, false, false]);
+
   const mouseOverEvent = () => {
     setOpen(true);
   }
 
   const mouseLeaveEvent = () => {
     setOpen(false);
+  }
+
+  const hamMenuclickEvent = (id :number) => {
+    setClickMenu(prev => prev.map((item, idx) => {
+      if (id === idx) {
+        return !item;
+      } else {
+        return false;
+      }
+    }));
+  }
+
+  const hamCloseClickEvent = () => {
+    setHamOpen(false);
+    setClickMenu(prev => prev.map(item => false));
   }
 
   return (
@@ -80,8 +100,8 @@ function Header() {
         <ul className="depth_1">
           {
             menu.map(item => (
-              <li 
-                key={item.id} 
+              <li
+                key={item.id}
                 onMouseOver={mouseOverEvent}
                 onMouseLeave={mouseLeaveEvent}
               >
@@ -111,6 +131,46 @@ function Header() {
             </a>
           </li>
         </ul>
+        <div className="ham">
+          <button 
+            type="button" 
+            onClick={() => setHamOpen(true)}
+          >
+            <FontAwesomeIcon icon={faBars} />
+          </button>
+          <div className={hamOpen ? "ham_menu open" : "ham_menu"}>
+            <div className="top">
+              <button type="button" onClick={hamCloseClickEvent}>
+                <FontAwesomeIcon icon={faXmark} />
+              </button>
+            </div>
+            <ul className="depth_1">
+              {
+                menu.map(item => (
+                  <li key={item.id} className={clickMenu[item.id] ? "on" : ""}>
+                    <div className="title" onClick={() => hamMenuclickEvent(item.id)}>
+                      <p>{item.title}</p>
+                      {
+                        clickMenu[item.id] ?
+                        <FontAwesomeIcon icon={faAngleUp} /> :
+                        <FontAwesomeIcon icon={faAngleDown} />
+                      }
+                    </div>
+                    <ul className="depth_2">
+                      {
+                        item.sub.map((sub, idx) => (
+                          <li key={idx} onClick={hamCloseClickEvent}>
+                            <Link to={sub.url}>{sub.title}</Link>
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        </div>
       </div>
       <div className={open ? "sub open" : "sub"}></div>
     </header>
