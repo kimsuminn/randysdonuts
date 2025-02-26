@@ -1,0 +1,101 @@
+header {
+  width: 100%;
+  height: 120px;
+  background-color: #1B4569;
+}
+header .header_inner {
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  margin: auto;
+  padding: 0 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header_inner .depth_1 {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+header .header_inner .depth_1 > li {
+  height: 100%;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+header .header_inner .depth_1 > li > a {
+  font-family: "Bold";
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+header .header_inner .depth_1 > li > a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  margin-top: 0.25rem;
+  background-color: #EA501A;
+  transition: 0.3s;
+}
+header .header_inner .depth_1 > li .depth_2 {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+header .header_inner .depth_1 > li .depth_2 li {
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+header .header_inner .depth_1 > li .depth_2 li a {
+  transition: 0.3s;
+}
+header .header_inner .depth_1 > li .depth_2 li a:hover {
+  color: #EA501A;
+}
+header .header_inner .depth_1 > li:hover > a {
+  color: #EA501A;
+}
+header .header_inner .depth_1 > li:hover > a::after {
+  width: 100%;
+}
+header .header_inner .depth_1:hover > li .depth_2 {
+  height: 282px;
+  padding: 1rem 0;
+}
+header .header_inner .depth_1:hover > li .depth_2 li {
+  height: 50px;
+  opacity: 1;
+}
+header .header_inner .sns {
+  display: flex;
+  gap: 1rem;
+}
+header .header_inner .sns li {
+  border-radius: 100%;
+  background-color: #0F3452;
+  padding: 0.25rem;
+}
+header .sub {
+  width: 100%;
+  height: 0;
+  background-color: rgba(27, 69, 105, 0.7);
+  transition: 0.3s;
+}
+header .sub.open {
+  height: 282px;
+}
+
+/*# sourceMappingURL=Header.css.map */
