@@ -1,0 +1,11 @@
+.brand {
+  width: 100%;
+  margin-top: 120px;
+}
+@media screen and (max-width: 1024px) {
+  .brand {
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=Brand.css.map */

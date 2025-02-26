@@ -1,0 +1,23 @@
+@use "../../style/Variable.scss" as var;
+
+.page_title {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .text {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 4rem 1rem;
+    text-align: center;
+    color: var.$gray-1;
+
+    h1 {
+      font-family: 'Bold';
+      margin-bottom: 1.25rem;
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+    }
+  }
+}

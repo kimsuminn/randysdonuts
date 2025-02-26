@@ -1,0 +1,337 @@
+{
+  "menu": [
+    { 
+      "id": 0, 
+      "name": "데블스 케이크",
+      "en_name": "Devil's Food Cake",
+      "price": 2800,
+      "img": "./img/menu/0.png",
+      "category": "classic",
+      "best": false
+    },
+    { 
+      "id": 1, 
+      "name": "글레이즈 올드패션",
+      "en_name": "Glazed Old Fashioned",
+      "price": 2800,
+      "img": "./img/menu/1.png",
+      "category": "classic",
+      "best": false
+    },
+    { 
+      "id": 2, 
+      "name": "초콜릿 올드패션",
+      "en_name": "Chocolate Old Fashioned",
+      "price": 2900,
+      "img": "./img/menu/2.png",
+      "category": "classic",
+      "best": false
+    },
+    { 
+      "id": 3, 
+      "name": "글레이즈 도넛",
+      "en_name": "Glazed Raised",
+      "price": 2900,
+      "img": "./img/menu/3.png",
+      "category": "classic",
+      "best": true
+    },
+    { 
+      "id": 4, 
+      "name": "슈가 도넛",
+      "en_name": "Sugar Raised",
+      "price": 2900,
+      "img": "./img/menu/4.png",
+      "category": "classic",
+      "best": false
+    },
+    { 
+      "id": 5, 
+      "name": "초콜릿 도넛",
+      "en_name": "Chocolate Raised",
+      "price": 3000,
+      "img": "./img/menu/5.png",
+      "category": "classic",
+      "best": false
+    },
+    { 
+      "id": 6, 
+      "name": "핑크 스프링클 도넛",
+      "en_name": "Pink Raised W Sprinkles",
+      "price": 3000,
+      "img": "./img/menu/6.png",
+      "category": "classic",
+      "best": false
+    },
+    { 
+      "id": 7, 
+      "name": "코코넛 도넛",
+      "en_name": "Coconut Raised",
+      "price": 3500,
+      "img": "./img/menu/7.png",
+      "category": "deluxe",
+      "best": false
+    },
+    { 
+      "id": 8, 
+      "name": "커피 크림 도넛",
+      "en_name": "Coffee Crumb Raised",
+      "price": 3500,
+      "img": "./img/menu/8.png",
+      "category": "deluxe",
+      "best": false
+    },
+    { 
+      "id": 9, 
+      "name": "글레이즈 크론디",
+      "en_name": "Glazed Crondy",
+      "price": 3500,
+      "img": "./img/menu/9.png",
+      "category": "deluxe",
+      "best": false
+    },
+    { 
+      "id": 10, 
+      "name": "슈가 크론디",
+      "en_name": "Sugar Crondy",
+      "price": 3500,
+      "img": "./img/menu/10.png",
+      "category": "deluxe",
+      "best": false
+    },
+    { 
+      "id": 11, 
+      "name": "시나몬 롤",
+      "en_name": "Cinnamon Roll",
+      "price": 3500,
+      "img": "./img/menu/11.png",
+      "category": "deluxe",
+      "best": false
+    },
+    { 
+      "id": 12, 
+      "name": "타이거 테일",
+      "en_name": "Tiger Tail",
+      "price": 3500,
+      "img": "./img/menu/12.png",
+      "category": "deluxe",
+      "best": false
+    },
+    { 
+      "id": 13, 
+      "name": "누텔라 도넛",
+      "en_name": "Nutella Raised",
+      "price": 3800,
+      "img": "./img/menu/13.png",
+      "category": "fancy",
+      "best": true
+    },
+    { 
+      "id": 14, 
+      "name": "가나슈 도넛",
+      "en_name": "White Chocolate Raised W Chocolate",
+      "price": 3800,
+      "img": "./img/menu/14.png",
+      "category": "fancy",
+      "best": true
+    },
+    { 
+      "id": 15, 
+      "name": "민트 초콜릿 도넛",
+      "en_name": "Mint Raised",
+      "price": 3800,
+      "img": "./img/menu/15.png",
+      "category": "fancy",
+      "best": false
+    },
+    { 
+      "id": 16, 
+      "name": "버터 크림 도넛",
+      "en_name": "Butter Crumb Raised",
+      "price": 3800,
+      "img": "./img/menu/16.png",
+      "category": "fancy",
+      "best": true
+    },
+    { 
+      "id": 17, 
+      "name": "카라멜 코코넛 도넛",
+      "en_name": "Caramel Raised W Coconut & Chocolate",
+      "price": 3800,
+      "img": "./img/menu/17.png",
+      "category": "fancy",
+      "best": true
+    },
+    { 
+      "id": 18, 
+      "name": "로스트 코코넛 도넛",
+      "en_name": "Roasted Coconut Raised",
+      "price": 3800,
+      "img": "./img/menu/18.png",
+      "category": "fancy",
+      "best": false
+    },
+    { 
+      "id": 19, 
+      "name": "초콜릿 코코넛 도넛",
+      "en_name": "Chocolate Raised W Coconut",
+      "price": 3800,
+      "img": "./img/menu/19.png",
+      "category": "fancy",
+      "best": false
+    },
+    { 
+      "id": 20, 
+      "name": "초콜릿 크론디",
+      "en_name": "Chocolate Crondy",
+      "price": 3800,
+      "img": "./img/menu/20.png",
+      "category": "fancy",
+      "best": false
+    },
+    { 
+      "id": 21, 
+      "name": "베어 클라우",
+      "en_name": "Bear Claw",
+      "price": 3800,
+      "img": "./img/menu/21.png",
+      "category": "fancy",
+      "best": false
+    },
+    { 
+      "id": 22, 
+      "name": "스프링 어니언 도넛",
+      "en_name": "Spring Onion Raised",
+      "price": 4300,
+      "img": "./img/menu/22.png",
+      "category": "premium",
+      "best": true
+    },
+    { 
+      "id": 23, 
+      "name": "스모어 도넛",
+      "en_name": "S’mores Raised",
+      "price": 4000,
+      "img": "./img/menu/23.png",
+      "category": "premium",
+      "best": false
+    },
+    { 
+      "id": 24, 
+      "name": "아몬드 브리틀 도넛",
+      "en_name": "Almond Brittle Raised",
+      "price": 4000,
+      "img": "./img/menu/24.png",
+      "category": "premium",
+      "best": false
+    },
+    { 
+      "id": 25, 
+      "name": "애월 녹차 필링 도넛",
+      "en_name": "Aewol Greentea Jelly Filed",
+      "price": 4300,
+      "img": "./img/menu/25.png",
+      "category": "premium",
+      "best": false
+    },
+    { 
+      "id": 26, 
+      "name": "딸기 필링 도넛",
+      "en_name": "Strawberry Jelly Filled",
+      "price": 4000,
+      "img": "./img/menu/26.png",
+      "category": "premium",
+      "best": false
+    },
+    { 
+      "id": 27, 
+      "name": "레몬 필링 도넛",
+      "en_name": "Lemon Jelly Filled",
+      "price": 4000,
+      "img": "./img/menu/27.png",
+      "category": "premium",
+      "best": false
+    },
+    { 
+      "id": 28, 
+      "name": "블루베리 필링 도넛",
+      "en_name": "Blueberry Jelly Filled",
+      "price": 4000,
+      "img": "./img/menu/28.png",
+      "category": "premium",
+      "best": false
+    },
+    { 
+      "id": 29, 
+      "name": "코코넛 라즈베리 도넛",
+      "en_name": "Coconut Raspberry Jelly Filled",
+      "price": 4000,
+      "img": "./img/menu/29.png",
+      "category": "premium",
+      "best": false
+    },
+    { 
+      "id": 30, 
+      "name": "초코 크런치 스트로베리 도넛",
+      "en_name": "Chocolate Crunchy Strawberry Jelly Filled",
+      "price": 4300,
+      "img": "./img/menu/30.png",
+      "category": "premium",
+      "best": false
+    },
+    { 
+      "id": 31, 
+      "name": "크림 사탕 도넛",
+      "en_name": "Sugar Coated Jelly W Cream",
+      "price": 4000,
+      "img": "./img/menu/31.png",
+      "category": "premium",
+      "best": false
+    },
+    { 
+      "id": 32, 
+      "name": "애플 프리터",
+      "en_name": "Apple Fritter",
+      "price": 4000,
+      "img": "./img/menu/32.png",
+      "category": "premium",
+      "best": false
+    },
+    { 
+      "id": 33, 
+      "name": "텍사스 글레이즈 도넛",
+      "en_name": "Texas Glazed",
+      "price": 4000,
+      "img": "./img/menu/33.png",
+      "category": "premium",
+      "best": false
+    },
+    { 
+      "id": 34, 
+      "name": "메이플 크림 롱존",
+      "en_name": "Maple Long John W Cream",
+      "price": 4000,
+      "img": "./img/menu/34.png",
+      "category": "premium",
+      "best": false
+    },
+    { 
+      "id": 35, 
+      "name": "초콜릿 초코 롱존",
+      "en_name": "Chocolate Long John W Chocolate",
+      "price": 4000,
+      "img": "./img/menu/35.png",
+      "category": "premium",
+      "best": false
+    },
+    { 
+      "id": 36, 
+      "name": "베이컨 메이플 롱존",
+      "en_name": "Bacon Maple Long John",
+      "price": 4000,
+      "img": "./img/menu/36.png",
+      "category": "premium",
+      "best": false
+    }
+  ]
+}
