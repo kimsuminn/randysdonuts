@@ -6,7 +6,10 @@ function News() {
     <div className="news">
       <Title />
       <div className="contents">
-        
+        <div className="title">
+          <p className="main">브랜드 소식</p>
+          <p className="sub">Notice & News</p>
+        </div>
       </div>
     </div>
   )

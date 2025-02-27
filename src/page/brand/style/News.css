@@ -8,5 +8,10 @@
   margin: auto;
   padding: 6rem 1rem;
 }
+@media screen and (max-width: 1024px) {
+  .news {
+    margin-top: 0;
+  }
+}
 
 /*# sourceMappingURL=News.css.map */

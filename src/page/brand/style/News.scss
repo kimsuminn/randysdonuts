@@ -10,4 +10,8 @@
     margin: auto;
     padding: 6rem 1rem;
   }
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 0;
+  }
 }
