@@ -6,6 +6,7 @@ import Footer from './layout/components/Footer';
 import Main from './page/main/Main';
 import Brand from './page/brand/Brand';
 import Menu from './page/menu/Menu';
+import PopCulture from './page/popculture/PopCulture';
 import './style/App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path='/menu/deluxe' element={<Menu />} />
         <Route path='/menu/fancy' element={<Menu />} />
         <Route path='/menu/premium' element={<Menu />} />
+        <Route path='/popculture' element={<PopCulture />} />
       </Routes>
       <Footer />
     </div>

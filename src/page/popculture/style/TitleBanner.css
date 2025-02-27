@@ -1,0 +1,42 @@
+.title_banner {
+  width: 100%;
+  height: 650px;
+  background-image: url(../../../../public/img/popculture/popculture_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.title_banner .text {
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  margin: auto;
+  padding: 2rem 1rem;
+  align-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+.title_banner .text h1 {
+  font-family: "Oswald";
+  margin-bottom: 1rem;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  letter-spacing: 10px;
+}
+.title_banner .text p {
+  white-space: pre-line;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  line-height: 1.3;
+}
+@media screen and (max-width: 1024px) {
+  .title_banner {
+    height: 300px;
+  }
+  .title_banner .text h1 {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  }
+  .title_banner .text p {
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
+  }
+}
+
+/*# sourceMappingURL=TitleBanner.css.map */
