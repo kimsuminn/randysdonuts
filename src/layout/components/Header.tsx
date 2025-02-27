@@ -21,7 +21,6 @@ const menu: MenuType[] = [
     url: '/brand',
     sub: [
       { title: '브랜드 스토리', url: '/brand' },
-      { title: '브랜드 소식', url: '/brand/news' }
     ]
   },
   {
@@ -103,7 +102,8 @@ function Header() {
           <Link to='/'><img src="/img/layout/logo.png" alt="logo" /></Link>
         </h1>
         <ul 
-          className="depth_1"                 onMouseOver={mouseOverEvent}
+          className="depth_1"                 
+          onMouseOver={mouseOverEvent}
           onMouseLeave={mouseLeaveEvent}
         >
           {

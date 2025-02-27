@@ -5,7 +5,7 @@ import Header from './layout/components/Header';
 import Footer from './layout/components/Footer';
 import Main from './page/main/Main';
 import Brand from './page/brand/Brand';
-import News from './page/brand/News';
+import Menu from './page/menu/Menu';
 import './style/App.css';
 
 function App() {
@@ -17,7 +17,11 @@ function App() {
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/brand' element={<Brand />} />
-        <Route path='/brand/news' element={<News />} />
+        <Route path='/menu/best' element={<Menu />} />
+        <Route path='/menu/classic' element={<Menu />} />
+        <Route path='/menu/deluxe' element={<Menu />} />
+        <Route path='/menu/fancy' element={<Menu />} />
+        <Route path='/menu/premium' element={<Menu />} />
       </Routes>
       <Footer />
     </div>
