@@ -2,9 +2,76 @@
   width: 100%;
   margin-top: 120px;
 }
+.brand .contents {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 6rem 1rem;
+}
+.brand .contents .title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.brand .contents .title .subtitle {
+  color: #333333;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+.brand .contents .title h2 {
+  width: fit-content;
+  margin: auto;
+  padding: 0.5rem 0;
+  border-top: 1px solid #333333;
+  color: #333333;
+  font-size: clamp(2rem, 3vw, 4rem);
+  font-family: "Bold";
+  letter-spacing: -0.05rem;
+}
+.brand .contents .title .description {
+  margin-top: 1rem;
+  color: #666666;
+  font-size: clamp(0.85rem, 2.5vw, 1.2rem);
+}
+.brand .contents .card_box {
+  width: 100%;
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.brand .contents .banner {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.brand .contents .banner h3 {
+  font-family: "Light";
+  line-height: 1.4;
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+}
 @media screen and (max-width: 1024px) {
   .brand {
     margin-top: 0;
+  }
+  .brand .contents {
+    padding: 4rem 1rem;
+  }
+  .brand .contents .card_box {
+    padding: 4rem 0;
+    gap: 6rem;
+  }
+  .brand .contents .banner {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .brand .contents .banner h3 {
+    text-align: center;
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
   }
 }
 
