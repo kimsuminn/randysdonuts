@@ -1,4 +1,4 @@
-import { TitleType } from "../../page/brand/Brand";
+import { TitleType } from "../../types/PublicTypes";
 import "../style/PageTitle.css";
 
 interface PropsType {

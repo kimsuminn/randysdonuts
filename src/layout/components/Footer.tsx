@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer>
       <div className="footer_inner">
-        <h2 className="logo"><img src="./img/layout/logo.png" alt="logo" /></h2>
+        <h2 className="logo"><img src="/img/layout/logo.png" alt="logo" /></h2>
         <p>
           서울특별시 마포구 동교로 247 4층, 5층 <br />
           사업자등록번호: 565-87-01114 <br />

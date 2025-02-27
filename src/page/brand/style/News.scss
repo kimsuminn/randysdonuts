@@ -1,0 +1,13 @@
+@use "../../../style/Variable.scss" as var;
+
+.news {
+  width: 100%;
+  margin-top: 120px;
+
+  .contents {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 6rem 1rem;
+  }
+}
