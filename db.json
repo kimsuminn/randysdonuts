@@ -57,7 +57,7 @@
     { 
       "id": 6, 
       "name": "핑크 스프링클 도넛",
-      "en_name": "Pink Raised W Sprinkles",
+      "en_name": "Pink Raised\nW Sprinkles",
       "price": 3000,
       "img": "/img/menu/6.png",
       "category": "classic",
@@ -129,7 +129,7 @@
     { 
       "id": 14, 
       "name": "가나슈 도넛",
-      "en_name": "White Chocolate Raised W Chocolate",
+      "en_name": "White Chocolate Raised\nW Chocolate",
       "price": 3800,
       "img": "/img/menu/14.png",
       "category": "fancy",
@@ -156,7 +156,7 @@
     { 
       "id": 17, 
       "name": "카라멜 코코넛 도넛",
-      "en_name": "Caramel Raised W Coconut & Chocolate",
+      "en_name": "Caramel Raised\nW Coconut & Chocolate",
       "price": 3800,
       "img": "/img/menu/17.png",
       "category": "fancy",
@@ -174,7 +174,7 @@
     { 
       "id": 19, 
       "name": "초콜릿 코코넛 도넛",
-      "en_name": "Chocolate Raised W Coconut",
+      "en_name": "Chocolate Raised\nW Coconut",
       "price": 3800,
       "img": "/img/menu/19.png",
       "category": "fancy",
@@ -264,7 +264,7 @@
     { 
       "id": 29, 
       "name": "코코넛 라즈베리 도넛",
-      "en_name": "Coconut Raspberry Jelly Filled",
+      "en_name": "Coconut Raspberry\nJelly Filled",
       "price": 4000,
       "img": "/img/menu/29.png",
       "category": "premium",

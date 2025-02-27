@@ -10,3 +10,21 @@ $gray-7: #222222;
 $gray-8: #111111;
 $gray-9: #000000;
 $info: #396cd5;
+
+@mixin title() {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+@mixin main() {
+  font-family: 'Light';
+  color: $primary-color;
+  font-size: clamp(2rem, 3vw, 4.5rem);
+}
+
+@mixin sub() {
+  color: $gray-2;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+}
