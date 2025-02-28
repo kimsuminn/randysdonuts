@@ -128,7 +128,8 @@
           padding: 1rem;
           position: absolute;
           top: 0;
-          right: 100%;
+          left: 0;
+          opacity: 0;
           background-color: rgba(27, 69, 105, 0.8);
           color: var.$gray-1;
           transition: .3s;
@@ -169,7 +170,7 @@
 
         &:hover {
           .hover {
-            right: 0;
+            opacity: 1;
           }
         }
       }

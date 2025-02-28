@@ -118,7 +118,8 @@
   padding: 1rem;
   position: absolute;
   top: 0;
-  right: 100%;
+  left: 0;
+  opacity: 0;
   background-color: rgba(27, 69, 105, 0.8);
   color: #ffffff;
   transition: 0.3s;
@@ -153,7 +154,7 @@
   margin-top: 0.5rem;
 }
 .menu .contents .item_box .item:hover .hover {
-  right: 0;
+  opacity: 1;
 }
 @media screen and (max-width: 1024px) {
   .menu {
