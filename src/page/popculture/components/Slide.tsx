@@ -29,18 +29,17 @@ const images = [
 ]
 
 function Slide() {
-  const [centerIndex, setCenterIndex] = useState(0);
 
   return (
     <div className="slider">
       <div className="container">
         <Swiper
           grabCursor={true}
-          centeredSlides={true}
           spaceBetween={16}
           autoplay={{
             delay: 3000,
-            disableOnInteraction: false
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
           }}
           keyboard={{ enabled: true }}
           modules={[Keyboard, Autoplay]}
@@ -55,8 +54,6 @@ function Slide() {
               slidesPerView: 5
             }
           }}
-          onSwiper={(swiper :SwiperClass) => setCenterIndex(swiper.realIndex)}
-          onSlideChange={(swiper :SwiperClass) => setCenterIndex(swiper.realIndex)}
           className="wrap"
         >
           {
@@ -65,7 +62,6 @@ function Slide() {
                 <img 
                   src={item.img} 
                   alt="slide_img"
-                  className={`${centerIndex === idx ? 'on' : ''}`}
                 />
               </SwiperSlide>
             ))

@@ -23,8 +23,9 @@
           filter: grayscale(100%);
           transition: .3s;
 
-          &.on {
+          &:hover {
             filter: grayscale(0);
+            transform: scale(1.1);
           }
         }
       }

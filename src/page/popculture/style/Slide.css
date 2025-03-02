@@ -21,8 +21,9 @@
   filter: grayscale(100%);
   transition: 0.3s;
 }
-.slider .container .wrap .slide_item img.on {
+.slider .container .wrap .slide_item img:hover {
   filter: grayscale(0);
+  transform: scale(1.1);
 }
 @media screen and (max-width: 1024px) {
   .slider .container {
