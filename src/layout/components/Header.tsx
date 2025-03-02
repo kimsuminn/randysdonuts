@@ -49,7 +49,7 @@ const menu: MenuType[] = [
     url: '/store',
     sub: [
       { title: '매장 소개', url: '/store' },
-      { title: '가맹점 문의', url: '/store/fanchise' },
+      { title: '가맹점 문의', url: '/store/franchise' },
     ]
   },
   {
@@ -163,8 +163,8 @@ function Header() {
                     <ul className="depth_2">
                       {
                         item.sub.map((sub, idx) => (
-                          <li key={idx} onClick={hamCloseClickEvent}>
-                            <Link to={sub.url}>{sub.title}</Link>
+                          <li key={idx}>
+                            <Link to={sub.url} onClick={hamCloseClickEvent}>{sub.title}</Link>
                           </li>
                         ))
                       }
