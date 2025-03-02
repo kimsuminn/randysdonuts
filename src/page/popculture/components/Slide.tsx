@@ -1,11 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Swiper as SwiperClass } from 'swiper/types';
 import { Keyboard, Autoplay } from 'swiper/modules';
 
 import "../style/Slide.css";
 import 'swiper/css';
 import 'swiper/css/scrollbar';
-import { useState } from 'react';
 
 const images = [
   { id: 1, img: '/img/popculture/slide_1.jpg' },

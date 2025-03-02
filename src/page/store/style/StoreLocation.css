@@ -1,0 +1,78 @@
+.location_item {
+  width: 100%;
+  padding: 8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: #F2F2F2;
+}
+.location_item figure {
+  align-self: center;
+  width: fit-content;
+  height: fit-content;
+}
+.location_item .info {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.location_item .info .text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.location_item .info .text > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  align-items: flex-start;
+}
+.location_item .info .text > div h3 {
+  grid-column: 1/2;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: clamp(1rem, 1vw, 1.4rem);
+  color: #111111;
+}
+.location_item .info .text > div p {
+  grid-column: 2/5;
+  font-size: clamp(1rem, 1vw, 1.4rem);
+  color: #666666;
+  white-space: pre-line;
+}
+.location_item .info .map {
+  flex: 1;
+}
+.location_item .info .map iframe {
+  display: block;
+  width: 600px;
+  height: 320px;
+}
+@media screen and (max-width: 1024px) {
+  .location_item {
+    padding: 4rem 1rem;
+  }
+  .location_item .info {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .location_item .info .text > div h3 {
+    font-size: clamp(0.75rem, 2.5vw, 1.1rem);
+  }
+  .location_item .info .text > div p {
+    font-size: clamp(0.75rem, 2.5vw, 1.1rem);
+  }
+  .location_item .info .map {
+    width: 100%;
+  }
+  .location_item .info .map iframe {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=StoreLocation.css.map */

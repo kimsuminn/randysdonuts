@@ -1,0 +1,95 @@
+@use "../../../style/Variable.scss" as var;
+
+.location_item {
+  width: 100%;
+  padding: 8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: #F2F2F2;    
+
+  figure {
+    align-self: center;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .info {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      & > div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        align-items: flex-start;
+
+        h3 {
+          grid-column: 1/2;
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+          font-size: clamp(1rem, 1vw, 1.4rem);
+          color: var.$gray-8;
+        }
+
+        p {
+          grid-column: 2/5;
+          font-size: clamp(1rem, 1vw, 1.4rem);
+          color: var.$gray-3;
+          white-space: pre-line;
+        }
+      }
+    }
+
+    .map {
+      flex: 1;
+
+      iframe {
+        display: block;
+        width: 600px;
+        height: 320px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 4rem 1rem;
+
+    .info {
+      flex-direction: column;
+      gap: 2rem;
+
+      .text {
+        & > div {
+          h3 {
+            font-size: clamp(0.75rem, 2.5vw, 1.1rem);
+          }
+  
+          p {
+            font-size: clamp(0.75rem, 2.5vw, 1.1rem);
+          }
+        }
+      }
+
+      .map {
+        width: 100%;
+        
+        iframe {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}

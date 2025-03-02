@@ -7,6 +7,8 @@ import Main from './page/main/Main';
 import Brand from './page/brand/Brand';
 import Menu from './page/menu/Menu';
 import PopCulture from './page/popculture/PopCulture';
+import Store from './page/store/Store';
+import Franchise from './page/store/Franchise';
 import './style/App.css';
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
         <Route path='/menu/fancy' element={<Menu />} />
         <Route path='/menu/premium' element={<Menu />} />
         <Route path='/popculture' element={<PopCulture />} />
+        <Route path='/store' element={<Store />} />
+        <Route path='/store/franchise' element={<Franchise />} />
       </Routes>
       <Footer />
     </div>
