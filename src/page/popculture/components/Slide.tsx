@@ -1,55 +1,77 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Keyboard, Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper as SwiperClass } from 'swiper/types';
+import { Keyboard, Autoplay } from 'swiper/modules';
 
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/scrollbar';
 import "../style/Slide.css";
+import 'swiper/css';
+import 'swiper/css/scrollbar';
+import { useState } from 'react';
+
+const images = [
+  { id: 1, img: '/img/popculture/slide_1.jpg' },
+  { id: 2, img: '/img/popculture/slide_2.jpg' },
+  { id: 3, img: '/img/popculture/slide_3.jpg' },
+  { id: 4, img: '/img/popculture/slide_4.jpg' },
+  { id: 5, img: '/img/popculture/slide_5.jpg' },
+  { id: 6, img: '/img/popculture/slide_6.jpg' },
+  { id: 7, img: '/img/popculture/slide_7.jpg' },
+  { id: 8, img: '/img/popculture/slide_8.jpg' },
+  { id: 9, img: '/img/popculture/slide_9.jpg' },
+  { id: 10, img: '/img/popculture/slide_10.jpg' },
+  { id: 11, img: '/img/popculture/slide_11.jpg' },
+  { id: 12, img: '/img/popculture/slide_12.jpg' },
+  { id: 13, img: '/img/popculture/slide_13.jpg' },
+  { id: 14, img: '/img/popculture/slide_14.jpg' },
+  { id: 15, img: '/img/popculture/slide_15.jpg' },
+  { id: 16, img: '/img/popculture/slide_16.jpg' },
+  { id: 17, img: '/img/popculture/slide_17.jpg' },
+  { id: 18, img: '/img/popculture/slide_18.jpg' },
+]
 
 function Slide() {
-
-  let imgIdx = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
+  const [centerIndex, setCenterIndex] = useState(0);
 
   return (
     <div className="slider">
-      <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        spaceBetween={16}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: -50,
-          depth: 100,
-          modifier: 3,
-          slideShadows: true,
-        }}
-        autoplay={{
-          delay: 3000,
-        }}
-        loop={true}
-        keyboard={{
-          enabled: true,
-        }}
-        modules={[EffectCoverflow, Keyboard, Autoplay]}
-        breakpoints={{
-          0: {
-            slidesPerView: 1
-          },
-          1024: {
-            slidesPerView: 3
+      <div className="container">
+        <Swiper
+          grabCursor={true}
+          centeredSlides={true}
+          spaceBetween={16}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false
+          }}
+          keyboard={{ enabled: true }}
+          modules={[Keyboard, Autoplay]}
+          breakpoints={{
+            0: {
+              slidesPerView: 1
+            },
+            500: {
+              slidesPerView: 3
+            },
+            1024: {
+              slidesPerView: 5
+            }
+          }}
+          onSwiper={(swiper :SwiperClass) => setCenterIndex(swiper.realIndex)}
+          onSlideChange={(swiper :SwiperClass) => setCenterIndex(swiper.realIndex)}
+          className="wrap"
+        >
+          {
+            images.map((item, idx) => (
+              <SwiperSlide key={item.id} className="slide_item">
+                <img 
+                  src={item.img} 
+                  alt="slide_img"
+                  className={`${centerIndex === idx ? 'on' : ''}`}
+                />
+              </SwiperSlide>
+            ))
           }
-        }}
-        className="swiper"
-      >
-        {
-          imgIdx.map(item => (
-            <SwiperSlide key={item} className="slide_item">
-              <img src={`/img/popculture/slide_${item}.jpg`} alt="slide_img" />
-            </SwiperSlide>
-          ))
-        }
-      </Swiper>
+        </Swiper>
+      </div>
     </div>
   )
 }
