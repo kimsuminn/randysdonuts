@@ -270,5 +270,97 @@
       "category": "premium",
       "best": false
     }
+  ],
+  "event": [
+    {
+      "id": 0,
+      "title": "제주 직영점 오픈 기념 도넛 무료 증정 이벤트",
+      "description": "매일 선착순 100명 도넛 무료 증정",
+      "date": "2019.08.16 ~ 2019.08.18",
+      "title_img": "/img/event/event_img_1.jpg",
+      "content": "/img/event/event_banner_1.png",
+      "end": true
+    },
+    {
+      "id": 1,
+      "title": "도넛 구매자 대상 에코백 무료 증정 이벤트",
+      "description": "도넛 구매 시, 에코백 무료 증정",
+      "date": "2019.09.12 ~ 2019.09.18",
+      "title_img": "/img/event/event_img_2.png",
+      "content": "/img/event/event_banner_2.png",
+      "end": true
+    },
+    {
+      "id": 2,
+      "title": "크리스마스 케이크 도넛 사전 예약 이벤트",
+      "description": "특별한 크리스마스 도넛을 만나보세요!",
+      "date": "2019.12.19 ~ 2019.12.31",
+      "title_img": "/img/event/event_img_3.png",
+      "content": "/img/event/event_banner_3.jpg",
+      "end": true
+    },
+    {
+      "id": 3,
+      "title": "달력 및 에코백 증정\n크리스마스 이벤트",
+      "description": "2만원 이상 구매 시, 달력과 에코백을 드립니다.",
+      "date": "2019.12.24 ~ 2019.12.26",
+      "title_img": "/img/event/event_img_4.png",
+      "content": "/img/event/event_banner_4.png",
+      "end": true
+    },
+    {
+      "id": 4,
+      "title": "부산 광안리점 불꽃축제 이벤트",
+      "description": "도넛 2만원 이상 구매 시 에코백 증정",
+      "date": "2023.11.01 ~ 2023.11.05",
+      "title_img": "/img/event/event_img_5.png",
+      "content": "/img/event/event_banner_5.png",
+      "end": true
+    },
+    {
+      "id": 5,
+      "title": "제주 직영점 오픈 기념 도넛 무료 증정 이벤트",
+      "description": "매일 선착순 100명 도넛 무료 증정",
+      "date": "2019.08.16 ~ 2019.08.18",
+      "title_img": "/img/event/event_img_1.jpg",
+      "content": "/img/event/event_banner_1.png",
+      "end": false
+    },
+    {
+      "id": 6,
+      "title": "도넛 구매자 대상 에코백 무료 증정 이벤트",
+      "description": "도넛 구매 시, 에코백 무료 증정",
+      "date": "2019.09.12 ~ 2019.09.18",
+      "title_img": "/img/event/event_img_2.png",
+      "content": "/img/event/event_banner_2.png",
+      "end": false
+    },
+    {
+      "id": 7,
+      "title": "크리스마스 케이크 도넛 사전 예약 이벤트",
+      "description": "특별한 크리스마스 도넛을 만나보세요!",
+      "date": "2019.12.19 ~ 2019.12.31",
+      "title_img": "/img/event/event_img_3.png",
+      "content": "/img/event/event_banner_3.jpg",
+      "end": false
+    },
+    {
+      "id": 8,
+      "title": "달력 및 에코백 증정\n크리스마스 이벤트",
+      "description": "2만원 이상 구매 시, 달력과 에코백을 드립니다.",
+      "date": "2019.12.24 ~ 2019.12.26",
+      "title_img": "/img/event/event_img_4.png",
+      "content": "/img/event/event_banner_4.png",
+      "end": false
+    },
+    {
+      "id": 9,
+      "title": "부산 광안리점 불꽃축제 이벤트",
+      "description": "도넛 2만원 이상 구매 시 에코백 증정",
+      "date": "2023.11.01 ~ 2023.11.05",
+      "title_img": "/img/event/event_img_5.png",
+      "content": "/img/event/event_banner_5.png",
+      "end": false
+    }
   ]
 }
