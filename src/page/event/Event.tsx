@@ -57,7 +57,9 @@ function Event() {
               currentItem.map((item :ItemType) => (
                 <div className="item" key={item.id}>
                   <Link to={`/event/${item.id}`}>
-                    <figure><img src={item.title_img} alt={item.date} /></figure>
+                    <figure className={pathname === '/event/end' ? "on" : ""}>
+                      <img src={item.title_img} alt={item.date} />
+                    </figure>
                     <div className="text">
                       <div className="title_text">
                         <h3>{item.title}</h3>
