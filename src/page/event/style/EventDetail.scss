@@ -1,0 +1,29 @@
+@use "../../../style/Variable.scss" as var;
+
+.detail {
+  width: 100%;
+  margin-top: 120px;
+
+  .contents {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 6rem 1rem;
+
+    .title {
+      @include var.title();
+
+      .main {
+        @include var.main();
+      }
+
+      .sub {
+        @include var.sub();
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 0;
+  }
+}

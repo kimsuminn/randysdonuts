@@ -1,0 +1,32 @@
+.detail {
+  width: 100%;
+  margin-top: 120px;
+}
+.detail .contents {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 6rem 1rem;
+}
+.detail .contents .title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.detail .contents .title .main {
+  font-family: "Light";
+  color: #1B4569;
+  font-size: clamp(2rem, 3vw, 4.5rem);
+}
+.detail .contents .title .sub {
+  color: #777777;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+}
+@media screen and (max-width: 1024px) {
+  .detail {
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=EventDetail.css.map */

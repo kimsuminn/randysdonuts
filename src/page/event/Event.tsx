@@ -16,7 +16,7 @@ interface ItemType {
 
 function Event() {
   const { pathname } = useLocation();
-  const { data } = useFetchEvent();
+  const { data } = useFetchEvent(null);
 
   const [currentItem, setCurrentItem] = useState<null | []>(null);
 
