@@ -9,6 +9,8 @@ import Menu from './page/menu/Menu';
 import PopCulture from './page/popculture/PopCulture';
 import Store from './page/store/Store';
 import Franchise from './page/store/Franchise';
+import Event from './page/event/Event';
+import EventDetail from './page/event/EventDetail';
 import './style/App.css';
 
 function App() {
@@ -28,6 +30,9 @@ function App() {
         <Route path='/popculture' element={<PopCulture />} />
         <Route path='/store' element={<Store />} />
         <Route path='/store/franchise' element={<Franchise />} />
+        <Route path='/event/progress' element={<Event />} />
+        <Route path='/event/end' element={<Event />} />
+        <Route path='/event/:id' element={<EventDetail />} />
       </Routes>
       <Footer />
     </div>

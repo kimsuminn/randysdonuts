@@ -55,11 +55,10 @@ const menu: MenuType[] = [
   {
     id: 4,
     title: 'EVENT',
-    url: '/event',
+    url: '/event/progress',
     sub: [
       { title: '진행 이벤트', url: '/event/progress' },
       { title: '종료 이벤트', url: '/event/end' },
-      { title: '당첨자 발표', url: '/event/winning' },
     ]
   }
 ];
