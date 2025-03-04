@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useFetchEvent } from "../../hook/UseFetchEvent";
 import Title from "./components/Title";
@@ -8,6 +8,11 @@ function EventDetail() {
 
   const { id } = useParams();
   const { data } = useFetchEvent(id);
+  const navigate = useNavigate();
+
+  const btnClick = () => {
+    navigate(data?.end ? '/event/end' : '/event/progress');
+  }
 
   return (
     <div className="detail">
@@ -45,9 +50,7 @@ function EventDetail() {
                 </div>
               }
           </div>
-          <button type="button">
-            <Link to={data?.end ? '/event/end' : '/event/progress'}>목록으로</Link>
-          </button>
+          <button type="button" onClick={btnClick}>목록으로</button>
         </div>
       </div>
     </div>

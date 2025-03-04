@@ -2,24 +2,26 @@ main {
   width: 100%;
 }
 main .main_inner {
-  max-width: 1400px;
+  width: 100%;
+  max-width: 1600px;
   margin: auto;
   margin-top: 120px;
-  padding: 6rem 1rem;
+  padding: 0 1rem;
 }
 main .main_inner .item_box {
   width: 100%;
-  padding: 0 1rem;
   display: flex;
-  gap: 6rem;
   justify-content: center;
 }
 main .main_inner .item_box .item {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffffff;
-  box-shadow: 0 1.25rem 2rem rgba(0, 0, 0, 0.2);
+  padding: 4rem;
+}
+main .main_inner .item_box .item:nth-child(2) {
+  border-left: 1px solid #1B4569;
 }
 main .main_inner .item_box .item figure {
   width: fit-content;
@@ -124,6 +126,9 @@ main .sns_banner .icon img {
   main .main_inner .item_box .item {
     background-color: transparent;
     box-shadow: none;
+  }
+  main .main_inner .item_box .item:nth-child(2) {
+    border-left: none;
   }
   main .main_inner .item_box .item figure {
     width: 100%;
