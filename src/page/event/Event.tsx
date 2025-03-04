@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { useFetchEvent } from "../../hook/UseFetchEvent";
 import Title from "./components/Title";
+import AOS from "aos";
+
+import "aos/dist/aos.css";
 import "./style/Event.css";
 
 interface ObjectType {
@@ -39,7 +42,11 @@ function Event() {
 
   useEffect(() => {
     currentEventItem();
-  }, [data, pathname])
+  }, [data, pathname]);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <div className="event">
@@ -49,7 +56,12 @@ function Event() {
           <p className="main">이벤트 & 프로모션</p>
           <p className="sub">Randy's Donuts Event & Promotion</p>
         </div>
-        <ul className="category">
+        <ul 
+          className="category"
+          data-aos="fade-in"
+          data-aos-duration="1500"
+          data-aos-dealy="300"
+        >
           <li className={pathname === '/event/progress' ? "on" : ""}>
             <Link to='/event/progress'>진행 이벤트</Link>
           </li>
@@ -62,7 +74,13 @@ function Event() {
           {
             currentItem ?
               currentItem.map((item :ItemType) => (
-                <div className="item" key={item.id}>
+                <div 
+                  className="item" 
+                  key={item.id}
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-dealy={`${item.id * 300}`}
+                >
                   <Link to={`/event/${item.id}`}>
                     <figure className={pathname === '/event/end' ? "on" : ""}>
                       <img src={item.title_img} alt={item.date} />

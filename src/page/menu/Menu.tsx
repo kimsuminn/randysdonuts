@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { useFetchMenu } from "../../hook/UseFetchMenu";
 import Title from "./components/Title";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./style/Menu.css";
 
 interface ItemType {
@@ -81,15 +83,25 @@ function Menu() {
     currentMenu();
   }, [pathname, data]);
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className='menu'>
       <Title />
       <div className="contents">
-        <div className="title">
+        <div 
+          className="title">
           <p className="main">도넛메뉴</p>
           <p className="sub">World Famous Since 1952</p>
         </div>
-        <ul className="category">
+        <ul 
+          className="category"
+          data-aos="fade-in"
+          data-aos-duration="1500"
+          data-aos-dealy="300"
+        >
           {
             category.map(item => (
               <li key={item.id} className={pathname === item.url ? "on" : ""}>
@@ -104,7 +116,13 @@ function Menu() {
           {
             currentItem ?
               currentItem.map((item :ItemType) => (
-                <div className="item" key={item.id}>
+                <div 
+                  className="item" 
+                  key={item.id}
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-dealy="500"
+                >
                   <div className="info">
                     {
                       item.best ?

@@ -1,9 +1,12 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Keyboard, Autoplay } from 'swiper/modules';
+import AOS from "aos";
 
 import "../style/Slide.css";
 import 'swiper/css';
 import 'swiper/css/scrollbar';
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 const images = [
   { id: 1, img: '/img/popculture/slide_1.jpg' },
@@ -28,9 +31,19 @@ const images = [
 
 function Slide() {
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className="slider">
-      <div className="container">
+    <div 
+      className="slider">
+      <div 
+        className="container"
+        data-aos="fade-in"
+        data-aos-duration="1500"
+        data-aos-dealy="300"
+      >
         <Swiper
           grabCursor={true}
           spaceBetween={16}
@@ -55,7 +68,7 @@ function Slide() {
           className="wrap"
         >
           {
-            images.map((item, idx) => (
+            images.map(item => (
               <SwiperSlide key={item.id} className="slide_item">
                 <img 
                   src={item.img} 

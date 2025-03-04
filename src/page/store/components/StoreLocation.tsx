@@ -1,11 +1,29 @@
+import { useEffect } from "react";
 import { StoreListType } from "../Store";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faLocationDot, faPhone, faSquareParking } from "@fortawesome/free-solid-svg-icons";
+import AOS from "aos";
+
+import "aos/dist/aos.css";
 import "../style/StoreLocation.css";
 
 function StoreLocation({ item } :{ item: StoreListType }) {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className="location_item">
+    <div 
+      className="location_item"
+      data-aos={`${
+        item.id % 2 === 0 ?
+        "fade-left" :
+        "fade-right"
+      }`}
+      data-aos-duration="1500"
+      data-aos-dealy={`${item.id * 300}`}
+    >
       <figure><img src={item.title} alt="title" /></figure>
       <div className="info">
         <div className="text">

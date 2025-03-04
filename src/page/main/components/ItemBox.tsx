@@ -1,8 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import { MainItemType } from "../Main";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 interface PropsType {
   item: MainItemType[]
@@ -10,10 +7,6 @@ interface PropsType {
 
 function ItemBox({ item } :PropsType) {
   const navigate = useNavigate();
-
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
     <div className="item_box">

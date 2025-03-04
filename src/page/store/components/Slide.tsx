@@ -1,10 +1,13 @@
+import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import AOS from 'aos';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'aos/dist/aos.css';
 import "../style/Slide.css";
 
 const slideImg = [
@@ -20,10 +23,19 @@ const slideImg = [
 
 function Slide() {
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="img_slide">
       <h3>Randy's Donuts in Korea</h3>
-      <div className="container">
+      <div 
+        className="container"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-dealy="300"
+      >
         <Swiper
           slidesPerView={1}
           navigation={{

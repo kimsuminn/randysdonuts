@@ -1,5 +1,8 @@
+import { useEffect } from "react";
 import Title from "./components/Title";
 import Card from "./components/Card";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./style/Brand.css";
 
 export interface BrandType {
@@ -49,6 +52,11 @@ const brand :BrandType[] = [
 ]
 
 function Brand() {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="brand">
       <Title />
@@ -67,7 +75,12 @@ function Brand() {
             ))
           }
         </div>
-        <div className="banner">
+        <div 
+          className="banner" 
+          data-aos="fade-in-up" 
+          data-aos-duration="1500" 
+          data-aos-delay="300"
+        >
           <figure><img src="/img/brand/brand_banner.jpg" alt="banner" /></figure>
           <h3>
             이제, 세계적으로 유명한 랜디스도넛의 <br />
