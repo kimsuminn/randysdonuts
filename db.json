@@ -279,6 +279,7 @@
       "date": "2019.08.16 ~ 2019.08.18",
       "title_img": "/img/event/event_img_1.jpg",
       "content": "/img/event/event_banner_1.png",
+      "url": "/store",
       "end": true
     },
     {
@@ -288,6 +289,7 @@
       "date": "2019.09.12 ~ 2019.09.18",
       "title_img": "/img/event/event_img_2.png",
       "content": "/img/event/event_banner_2.png",
+      "url": "/store",
       "end": true
     },
     {
@@ -296,7 +298,15 @@
       "description": "특별한 크리스마스 도넛을 만나보세요!",
       "date": "2019.12.19 ~ 2019.12.31",
       "title_img": "/img/event/event_img_3.png",
-      "content": "/img/event/event_banner_3.jpg",
+      "content": {
+        "1": "/img/event/event_banner_3.jpg",
+        "2": "/img/event/event_banner_3_1.jpg",
+        "3": "/img/event/event_banner_3_2.jpg"
+      },
+      "url": {
+        "1": "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfLVZKEXlLagm4eeXlV2NfbpO2HeGnxHm_LcbTUoB5w583TCg/viewform?usp=send_form&pli=1",
+        "2": "https://docs.google.com/forms/d/e/1FAIpQLSfvCVmDzMD0-gVtrEG0_oB3aIDU8p5Udyi-a8p38o4R9HAPkg/viewform?usp=send_form" 
+      },
       "end": true
     },
     {
@@ -306,6 +316,7 @@
       "date": "2019.12.24 ~ 2019.12.26",
       "title_img": "/img/event/event_img_4.png",
       "content": "/img/event/event_banner_4.png",
+      "url": null,
       "end": true
     },
     {
@@ -315,6 +326,7 @@
       "date": "2023.11.01 ~ 2023.11.05",
       "title_img": "/img/event/event_img_5.png",
       "content": "/img/event/event_banner_5.png",
+      "url": null,
       "end": true
     }
   ]
