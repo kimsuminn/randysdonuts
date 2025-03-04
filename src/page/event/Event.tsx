@@ -4,13 +4,20 @@ import { useFetchEvent } from "../../hook/UseFetchEvent";
 import Title from "./components/Title";
 import "./style/Event.css";
 
+interface ObjectType {
+  1: string,
+  2: string,
+  3?: string
+}
+
 interface ItemType {
   id: number,
   title: string,
   description: string,
   date: string,
   title_img: string,
-  content: string,
+  content: string | ObjectType,
+  url: null | string | ObjectType,
   end: boolean
 }
 
