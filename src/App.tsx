@@ -12,6 +12,7 @@ import Franchise from './page/store/Franchise';
 import Event from './page/event/Event';
 import EventDetail from './page/event/EventDetail';
 import './style/App.css';
+import TopBtn from './layout/components/TopBtn';
 
 function App() {
   const { hamOpen } = useSelector((state :RootState) => state.header);
@@ -34,6 +35,7 @@ function App() {
         <Route path='/event/end' element={<Event />} />
         <Route path='/event/:id' element={<EventDetail />} />
       </Routes>
+      <TopBtn />
       <Footer />
     </div>
   );

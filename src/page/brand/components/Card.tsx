@@ -17,7 +17,7 @@ function Card({ item } :PropsType) {
   return (
     <div 
       className={item.inverse ? "card img_right" : "card"}
-      data-aos={item.inverse ? "fade-left" : "fade-right"}
+      data-aos="fade-up"
       data-aos-duration="1500"
       data-aos-delay="300"
     >

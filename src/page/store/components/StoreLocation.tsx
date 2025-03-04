@@ -16,11 +16,7 @@ function StoreLocation({ item } :{ item: StoreListType }) {
   return (
     <div 
       className="location_item"
-      data-aos={`${
-        item.id % 2 === 0 ?
-        "fade-left" :
-        "fade-right"
-      }`}
+      data-aos="fade-up"
       data-aos-duration="1500"
       data-aos-dealy={`${item.id * 300}`}
     >

@@ -77,7 +77,7 @@ function Brand() {
         </div>
         <div 
           className="banner" 
-          data-aos="fade-in-up" 
+          data-aos="fade-up" 
           data-aos-duration="1500" 
           data-aos-delay="300"
         >

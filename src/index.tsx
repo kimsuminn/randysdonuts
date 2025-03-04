@@ -4,7 +4,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { Provider } from 'react-redux';
 import store from './store/store';
 
@@ -20,7 +19,7 @@ root.render(
         <BrowserRouter>
           <App />
         </BrowserRouter>
-        <ReactQueryDevtools />
+        {/* <ReactQueryDevtools /> */}
       </QueryClientProvider>
     </Provider>
   </React.StrictMode>
