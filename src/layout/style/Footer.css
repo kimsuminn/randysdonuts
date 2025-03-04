@@ -2,6 +2,7 @@ footer {
   width: 100%;
   background-color: #1B4569;
   color: #ffffff;
+  position: relative;
 }
 footer .footer_inner {
   width: 100%;
@@ -17,6 +18,33 @@ footer .footer_inner p {
   text-align: center;
   line-height: 1.5;
   font-size: clamp(0.7rem, 2.5vw, 0.9rem);
+}
+footer .top_button {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  z-index: 1000;
+  bottom: 2rem;
+  right: 2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+footer .top_button.footer_fixed {
+  position: absolute;
+  bottom: 380px;
+}
+footer .top_button.show {
+  opacity: 1;
+}
+footer .top_button button {
+  border: none;
+  border-radius: 100%;
+  padding: 1rem 1.25rem;
+  color: #ffffff;
+  background-color: #1B4569;
+  font-family: "Regular";
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=Footer.css.map */

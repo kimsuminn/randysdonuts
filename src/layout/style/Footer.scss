@@ -4,6 +4,7 @@ footer {
   width: 100%;
   background-color: var.$primary-color;
   color: var.$gray-1;
+  position: relative;
 
   .footer_inner {
     width: 100%;
@@ -19,6 +20,37 @@ footer {
       text-align: center;
       line-height: 1.5;
       font-size: clamp(0.7rem, 2.5vw, 0.9rem);
+    }
+  }
+
+  .top_button{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 2rem;
+    right: 2rem;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+
+    &.footer_fixed {
+      position: absolute;
+      bottom: 380px;
+    }
+
+    &.show {
+      opacity: 1;
+    }
+
+    button {
+      border: none;
+      border-radius: 100%;
+      padding: 1rem 1.25rem;
+      color: var.$gray-1;
+      background-color: var.$primary-color;
+      font-family: 'Regular';
+      font-size: 1.2rem;
+      cursor: pointer;
     }
   }
 }
