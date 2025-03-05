@@ -124,6 +124,7 @@ main .sns_banner .icon img {
     gap: 3rem;
   }
   main .main_inner .item_box .item {
+    padding: 0;
     background-color: transparent;
     box-shadow: none;
   }
