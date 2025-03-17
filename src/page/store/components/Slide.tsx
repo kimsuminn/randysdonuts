@@ -34,7 +34,7 @@ function Slide() {
         className="container"
         data-aos="fade-up"
         data-aos-duration="1500"
-        data-aos-dealy="300"
+        data-aos-delay="300"
       >
         <Swiper
           slidesPerView={1}

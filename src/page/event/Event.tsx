@@ -60,7 +60,7 @@ function Event() {
           className="category"
           data-aos="fade-in"
           data-aos-duration="1500"
-          data-aos-dealy="300"
+          data-aos-delay="300"
         >
           <li className={pathname === '/event/progress' ? "on" : ""}>
             <Link to='/event/progress'>진행 이벤트</Link>
@@ -79,7 +79,7 @@ function Event() {
                   key={item.id}
                   data-aos="fade-up"
                   data-aos-duration="1500"
-                  data-aos-dealy={`${item.id * 300}`}
+                  data-aos-delay="300"
                 >
                   <Link to={`/event/${item.id}`}>
                     <figure className={pathname === '/event/end' ? "on" : ""}>

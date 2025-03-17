@@ -18,7 +18,7 @@ function StoreLocation({ item } :{ item: StoreListType }) {
       className="location_item"
       data-aos="fade-up"
       data-aos-duration="1500"
-      data-aos-dealy={`${item.id * 300}`}
+      data-aos-delay="300"
     >
       <figure><img src={item.title} alt="title" /></figure>
       <div className="info">

@@ -42,7 +42,7 @@ function Slide() {
         className="container"
         data-aos="fade-in"
         data-aos-duration="1500"
-        data-aos-dealy="300"
+        data-aos-delay="300"
       >
         <Swiper
           grabCursor={true}

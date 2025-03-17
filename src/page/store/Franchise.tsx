@@ -18,7 +18,7 @@ function Franchise() {
         className="contents"
         data-aos="zoom-in-up"
         data-aos-duration="1500"
-        data-aos-dealy="300"
+        data-aos-delay="300"
       >
         <figure><img src="/img/store/comming.jpg" alt="comming" /></figure>
         <h3>해당 메뉴는 준비중입니다.</h3>

@@ -100,7 +100,7 @@ function Menu() {
           className="category"
           data-aos="fade-in"
           data-aos-duration="1500"
-          data-aos-dealy="300"
+          data-aos-delay="300"
         >
           {
             category.map(item => (
@@ -121,7 +121,7 @@ function Menu() {
                   key={item.id}
                   data-aos="fade-up"
                   data-aos-duration="1500"
-                  data-aos-dealy="500"
+                  data-aos-delay="300"
                 >
                   <div className="info">
                     {

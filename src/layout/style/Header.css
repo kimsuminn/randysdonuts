@@ -128,6 +128,7 @@ header .header_inner .ham .ham_menu .top button {
 }
 header .header_inner .ham .ham_menu .depth_1 {
   width: 100%;
+  overflow-y: scroll;
   padding: 0 1rem;
   padding-bottom: 2rem;
   display: flex;
